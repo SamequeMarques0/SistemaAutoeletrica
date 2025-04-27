@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>APPLICATION</title>
+
+  <link rel="manifest" href="manifest.json">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="cards.css">
+  <link rel="stylesheet" href="main.css">
+
+</head>
+<body class="bgcolorDark">
+  <!-- Topo -->
+  <nav class="navbar navbar-dark bgcolorRed" id="navbar">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1 colorLight">#5 Application - Main</span>
+      <div style="display: flex;">
+        <div class="dropdown">
+            <button class="btn btn-outline-light dropdown-toggle" id="" data-bs-toggle="dropdown" aria-expanded="false">
+              <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18.6175 13.0317C17.7315 13.6424 16.6575 14 15.5 14C12.4624 14 10 11.5376 10 8.5C10 5.46243 12.4624 3 15.5 3C18.5376 3 21 5.46243 21 8.5C21 9.6575 20.6424 10.7315 20.0317 11.6175L22.7071 14.2929L21.2929 15.7071L18.6175 13.0317ZM3 4H8V6H3V4ZM3 11H8V13H3V11ZM3 18H21V20H3V18Z"></path></svg>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" target="_blank" href="https://buscaplacas.com.br"><svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 21H5V22C5 22.5523 4.55228 23 4 23H3C2.44772 23 2 22.5523 2 22V13L4.4174 8.97099C4.77884 8.36858 5.42986 7.99998 6.13238 7.99998H17.8676C18.5701 7.99998 19.2212 8.36858 19.5826 8.97099L22 13V22C22 22.5523 21.5523 23 21 23H20C19.4477 23 19 22.5523 19 22V21ZM4.33238 13H19.6676L17.8676 9.99998H6.13238L4.33238 13ZM6.5 18C7.32843 18 8 17.3284 8 16.5C8 15.6716 7.32843 15 6.5 15C5.67157 15 5 15.6716 5 16.5C5 17.3284 5.67157 18 6.5 18ZM17.5 18C18.3284 18 19 17.3284 19 16.5C19 15.6716 18.3284 15 17.5 15C16.6716 15 16 15.6716 16 16.5C16 17.3284 16.6716 18 17.5 18ZM5.43934 3.43932L6.5 2.37866L7.56066 3.43932C7.83211 3.71077 8 4.08577 8 4.49998C8 5.32841 7.32843 5.99998 6.5 5.99998C5.67157 5.99998 5 5.32841 5 4.49998C5 4.08577 5.16789 3.71077 5.43934 3.43932ZM10.9393 3.43932L12 2.37866L13.0607 3.43932C13.3321 3.71077 13.5 4.08577 13.5 4.49998C13.5 5.32841 12.8284 5.99998 12 5.99998C11.1716 5.99998 10.5 5.32841 10.5 4.49998C10.5 4.08577 10.6679 3.71077 10.9393 3.43932ZM16.4393 3.43932L17.5 2.37866L18.5607 3.43932C18.8321 3.71077 19 4.08577 19 4.49998C19 5.32841 18.3284 5.99998 17.5 5.99998C16.6716 5.99998 16 5.32841 16 4.49998C16 4.08577 16.1679 3.71077 16.4393 3.43932Z"></path></svg></a></li>
+              <li><a class="dropdown-item" target="_blank" href="https://silastermoeservicos.wasmer.app"><svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.007 2.10377C8.60544 1.65006 7.08181 2.28116 6.41156 3.59306L5.60578 5.17023C5.51004 5.35763 5.35763 5.51004 5.17023 5.60578L3.59306 6.41156C2.28116 7.08181 1.65006 8.60544 2.10377 10.007L2.64923 11.692C2.71404 11.8922 2.71404 12.1078 2.64923 12.308L2.10377 13.993C1.65006 15.3946 2.28116 16.9182 3.59306 17.5885L5.17023 18.3942C5.35763 18.49 5.51004 18.6424 5.60578 18.8298L6.41156 20.407C7.08181 21.7189 8.60544 22.35 10.007 21.8963L11.692 21.3508C11.8922 21.286 12.1078 21.286 12.308 21.3508L13.993 21.8963C15.3946 22.35 16.9182 21.7189 17.5885 20.407L18.3942 18.8298C18.49 18.6424 18.6424 18.49 18.8298 18.3942L20.407 17.5885C21.7189 16.9182 22.35 15.3946 21.8963 13.993L21.3508 12.308C21.286 12.1078 21.286 11.8922 21.3508 11.692L21.8963 10.007C22.35 8.60544 21.7189 7.08181 20.407 6.41156L18.8298 5.60578C18.6424 5.51004 18.49 5.35763 18.3942 5.17023L17.5885 3.59306C16.9182 2.28116 15.3946 1.65006 13.993 2.10377L12.308 2.64923C12.1078 2.71403 11.8922 2.71404 11.692 2.64923L10.007 2.10377ZM6.75977 11.7573L8.17399 10.343L11.0024 13.1715L16.6593 7.51465L18.0735 8.92886L11.0024 15.9999L6.75977 11.7573Z"></path></svg></a></li>
+            </ul>
+        </div>
+        <div class="dropdown" style="margin-left: 8px;">
+          <button class="btn btn-outline-light dropdown-toggle" id="" data-bs-toggle="dropdown" aria-expanded="false">
+            <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 14V22H4C4 17.5817 7.58172 14 12 14ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM14.5946 18.8115C14.5327 18.5511 14.5 18.2794 14.5 18C14.5 17.7207 14.5327 17.449 14.5945 17.1886L13.6029 16.6161L14.6029 14.884L15.5952 15.4569C15.9883 15.0851 16.4676 14.8034 17 14.6449V13.5H19V14.6449C19.5324 14.8034 20.0116 15.0851 20.4047 15.4569L21.3971 14.8839L22.3972 16.616L21.4055 17.1885C21.4673 17.449 21.5 17.7207 21.5 18C21.5 18.2793 21.4673 18.551 21.4055 18.8114L22.3972 19.3839L21.3972 21.116L20.4048 20.543C20.0117 20.9149 19.5325 21.1966 19.0001 21.355V22.5H17.0001V21.3551C16.4677 21.1967 15.9884 20.915 15.5953 20.5431L14.603 21.1161L13.6029 19.384L14.5946 18.8115ZM18 17C17.4477 17 17 17.4477 17 18C17 18.5523 17.4477 19 18 19C18.5523 19 19 18.5523 19 18C19 17.4477 18.5523 17 18 17Z"></path></svg>
+          </button>
+          
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#" onclick="exportarBanco()">Exportar BD</a></li>
+            <li>
+              <label class="dropdown-item" for="importarJson">Importar BD</label>
+              <input type="file" id="importarJson" accept=".json" style="display:none" onchange="importarNotaJson(event)">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Lista de Notas Recentes -->
+  <div class="container mt-4">
+    <h5 class="colorRed">Notas Recentes</h5>
+    <div class="row row-cols-1 g-3" id="notasContainer">
+      <!-- Notas serão inseridas aqui dinamicamente -->
+    </div>
+  </div>
+
+  <!-- Botão Flutuante Nova Nota -->
+  <button class="fab bgcolorRed" style="display: flex; align-items: center; justify-content: center;" title="Nova Nota" data-bs-toggle="modal" data-bs-target="#novaNotaModal"><svg style="width: 37px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M5.67591 4.25667C9.60392 1.03828 15.4094 1.26236 19.076 4.92893C22.9812 8.83418 22.9812 15.1658 19.076 19.0711C15.1707 22.9763 8.83906 22.9763 4.93382 19.0711C2.40932 16.5466 1.51676 13.0081 2.25611 9.76666L2.33275 9.45394L4.26718 9.96315C3.56967 12.623 4.26329 15.5721 6.34803 17.6569C9.47222 20.781 14.5375 20.781 17.6617 17.6569C20.7859 14.5327 20.7859 9.46734 17.6617 6.34315C14.8441 3.5255 10.4475 3.24903 7.32006 5.51375L7.09886 5.67983L8.1158 6.6967L3.5196 7.75736L4.58026 3.16117L5.67591 4.25667ZM13.0049 6V8H15.5049V10H10.0049C9.72874 10 9.50488 10.2239 9.50488 10.5C9.50488 10.7455 9.68176 10.9496 9.91501 10.9919L10.0049 11H14.0049C15.3856 11 16.5049 12.1193 16.5049 13.5C16.5049 14.8807 15.3856 16 14.0049 16H13.0049V18H11.0049V16H8.50488V14H14.0049C14.281 14 14.5049 13.7761 14.5049 13.5C14.5049 13.2545 14.328 13.0504 14.0948 13.0081L14.0049 13H10.0049C8.62417 13 7.50488 11.8807 7.50488 10.5C7.50488 9.11929 8.62417 8 10.0049 8H11.0049V6H13.0049Z"></path></svg></button>
+
+  <!-- Modal Nova Nota -->
+  <div class="modal fade" id="novaNotaModal" tabindex="-1" aria-labelledby="novaNotaLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title id="novaNotaLabel">Nova Nota</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <form id="formNovaNota">
+            <div class="mb-3">
+              <label for="cliente" class="form-label">Nome do Cliente</label>
+              <input type="text" class="form-control" id="cliente" required>
+            </div>
+            <div class="mb-3">
+              <label for="veiculo" class="form-label">Veículo</label>
+              <input type="text" class="form-control" id="veiculo" required>
+            </div>
+            <div class="mb-3">
+              <label for="placa" class="form-label">Placa</label>
+              <input type="text" class="form-control" id="placa" required>
+            </div>
+            <div id="servicosContainer">
+              <div class="mb-3">
+                <label class="form-label">Serviço</label>
+                <input type="text" class="form-control servico" placeholder="Descrição do serviço">
+                <input type="number" class="form-control valor mt-1" placeholder="Valor (R$)">
+              </div>
+            </div>
+            <button type="button" class="btn btn-outline-primary mb-3" onclick="adicionarCampoServico()">+Serviço</button>
+
+            <div class="mb-3">
+              <label for="garantia" class="form-label">Tempo de Garantia</label>
+              <input type="text" class="form-control" id="garantia" placeholder="Ex: 90 dias">
+            </div>
+            <div class="mb-3">
+              <label for="observacao" class="form-label">Observação</label>
+              <textarea class="form-control" id="observacao" rows="2"></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="desconto" class="form-label">Desconto (R$)</label>
+              <input type="number" class="form-control" id="desconto" min="0" step="0.01" value="0">
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary" onclick="adicionarNota()">Adicionar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js" defer></script>
+
+  <!-- CODE -->
+  <script>
+      let contador = 124;
+
+        function adicionarCampoServico() {
+                const container = document.getElementById('servicosContainer');
+                const div = document.createElement('div');
+                div.classList.add('mb-3');
+                div.innerHTML = `
+                    <input type="text"  class="form-control servico" placeholder="Descrição do serviço">
+                    <input type="number" class="form-control valor mt-1" placeholder="Valor (R$)">
+                `;
+                container.appendChild(div);
+                }   
+
+        function gerarIdAleatorio() {
+        return Math.floor(100000 + Math.random() * 900000).toString();
+        }
+
+        function adicionarNota() {
+          const cliente = document.getElementById('cliente').value;
+          const veiculo = document.getElementById('veiculo').value;
+          const placa = document.getElementById('placa').value;
+          const garantia = document.getElementById('garantia').value;
+          const observacao = document.getElementById('observacao').value;
+          const desconto = parseFloat(document.getElementById('desconto').value) || 0;
+
+          const servicos = document.querySelectorAll('.servico');
+          const valores = document.querySelectorAll('.valor');
+
+          let listaServicos = '';
+          let total = 0;
+
+          for (let i = 0; i < servicos.length; i++) {
+            const descricao = servicos[i].value;
+            const valor = parseFloat(valores[i].value) || 0;
+            if (descricao) {
+              
+              listaServicos += `<li><div class="descr">${descricao}</div><div class="vlr">R$ ${valor.toFixed(2)}</div></li>`;
+
+              /* 
+                  default: listaServicos += `<li>${descricao} - R$ ${valor.toFixed(2)}</li>`;
+                listaServico += `<li><div class="descr">${descricao}</div><div class="vlr">R$ ${valor.toFixed(2)}</div></li>`
+              */
+
+              total += valor;
+            }
+          }
+
+          total -= desconto;
+
+          if (!cliente || !veiculo || !placa || total < 0) return;
+
+          const notaId = gerarIdAleatorio();
+          const data = new Date().toLocaleDateString();
+
+          const nota = {
+            id: notaId,
+            cliente,
+            veiculo,
+            placa,
+            garantia,
+            observacao,
+            servicos: listaServicos,
+            total: total.toFixed(2),
+            data,
+            desconto
+          };
+
+          
+
+          salvarNota(nota);
+          renderizarNota(nota);
+
+          document.getElementById('formNovaNota').reset();
+          document.getElementById('servicosContainer').innerHTML = `
+            <div class="mb-3">
+              <label class="form-label">Serviço</label>
+              <input type="text" class="form-control servico" placeholder="Descrição do serviço">
+              <input type="number" class="form-control valor mt-1" placeholder="Valor (R$)">
+            </div>`;
+          const modal = bootstrap.Modal.getInstance(document.getElementById('novaNotaModal'));
+          modal.hide();
+        }
+
+        function salvarNota(nota) {
+          const notas = JSON.parse(localStorage.getItem('notas')) || [];
+          notas.push(nota);
+          localStorage.setItem('notas', JSON.stringify(notas));
+        }
+
+        function renderizarNota(nota) {
+          const notaHtml = `
+            <div class="col" data-id="${nota.id}">
+              <div class="card">
+                <div class="card-header bgcolorRed colorLight">ID ${nota.id}</div>
+                <div class="card-body">
+                  <h5 class="card-title itemA">${nota.cliente}</h5>
+                  <p class="card-text itemB">
+                    <strong>Veículo:</strong> ${nota.veiculo} / ${nota.placa}<br>
+                    <strong>Data:</strong> ${nota.data}<br>
+                    <strong>Garantia:</strong> ${nota.garantia || '-'}
+                  </p>
+                  <ul class="itemC">${nota.servicos}</ul>
+                  ${nota.observacao ? `<p class="itemD"><strong class="">Observação:</strong><br>${nota.observacao}</p>` : ''}
+                  ${nota.desconto > 0 ? `<p class="itemE"><strong class="">Desconto:</strong><br> R$${nota.desconto.toFixed(2)}</p>` : ''}
+                  <p class="card-text itemF"><strong >Total:</strong><br> R$${nota.total}</p>
+                  <div class="btnsCard">
+                    <button class="btn btn-sm btn-outline-info itemG" onclick="imprimirNota(this)">Imprimir</button>
+                    <button class="btn btn-sm btn-outline-danger ms-2 itemH" onclick="excluirNota(this)">Excluir</button>
+                    <button class="btn btn-sm btn-outline-success ms-2 itemI" onclick="exportarNota(this)">JSON</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+          document.getElementById('notasContainer').insertAdjacentHTML('afterbegin', notaHtml);
+        }
+
+
+        function imprimirNota(botao) {
+                  const card = botao.closest('.card');
+                  const col = botao.closest('.col');
+                  const notaId = col.getAttribute('data-id');
+
+                  const notas = JSON.parse(localStorage.getItem('notas')) || [];
+                  const nota = notas.find(n => n.id === notaId);
+
+                  console.log(nota);
+
+                  if (!nota) {
+                    alert("Nota não encontrada.");
+                    return;
+                  }
+
+                  // Usando o JSON da nota para criar a visualização
+                  const printWindow = window.open('', '', 'height=600,width=800');
+                  printWindow.document.write('<html><head><title>Imprimir Nota</title>');
+                  printWindow.document.write('<link rel="stylesheet" href="https://raw.githubusercontent.com/SamequeMarques0/SilasApplicationSource/refs/heads/main/main-os.css">');
+                  printWindow.document.write('<link rel="stylesheet" href="main-os.css">');
+                  printWindow.document.write('</head><body class="">');
+
+
+                  /* ----______------_______------_______------_______------____ */
+                  printWindow.document.write(
+                    `
+                      <div id="paper">
+                            <header>
+                                <div id="brading">
+                                    <img src="silas-brading.png" alt="">
+                                </div>
+                                <ul id="info">
+                                    <li  style="list-style: none;">Rua Nossa Senhora do Carmo, 407, 57082-210, Maceió/AL</li>
+                                    <li  style="list-style: none;">999 999 999 999</li>
+                                    <li  style="list-style: none;">info@email.com</li>
+                                    <li  style="list-style: none;">site.com.br</li>
+                                </ul>
+                            </header>
+                            
+                            <div id="subheader">
+                                <div id="cliente">
+                                    <div class="title">Detatlhe:</div>
+                                    <span class="row"></span>
+                                    <div class="clientBox">${nota.cliente}</div>
+                                    <div class="veiculo">${nota.veiculo}</div>
+                                    <div class="placa" style="text-transform: uppercase">${nota.placa}</div>
+                                </div>
+                                <div id="informacao">
+                                    <div class="id"><strong>ID:</strong>${nota.id}</div>
+                                    <div class="data"><strong>DATA:</strong>${nota.data}</div>
+                                    <div class="garantia"><strong>GARANTIA(FIM):</strong>${nota.garantia}</div>  <!-- @@@@ criar obj pra calcular a data atual e por +90 dias -->
+                                </div>
+                            </div>
+
+                            <div id="servico">
+                                <div class="thead">
+                                    <div class="ttitle">Descricao</div>
+                                    <div class="tvalor">Valor (R$)</div>
+                                </div>
+                                <ul class="servico">
+                                    <!-- Maximo de Item 12 -->
+                                    ${nota.servicos}
+                                </ul>
+                            </div>
+
+                            <div id="boxing">
+
+                                <div class="card">
+                                    <div class="ckmdc">METODOS DE PAGAMENTO</div>
+
+                                    <div class="item">
+                                        <strong>Cartão de Crédito</strong>
+                                        <ul>
+                                            <li>2x sem Juros. Parcelamento acima do citado <br>o juros é repassado ao cliente.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <strong>Avista</strong>
+                                        <ul style="display: flex;">
+                                            <li>PIX</li>
+                                            <li>Débito</li>
+                                            <li>Dinheiro</li>
+                                        </ul>
+                                    </div>
+                                    <div class="item">
+                                        <strong>OBSERVAÇÃO:</strong>
+                                        <span class="row2"></span>
+                                        ${nota.observacao ? `<p style="width: 720px;height: 50px; text-indent: 20px;" class="obs">${nota.observacao}</p>` : '' }</p>
+                                    </div>
+                                </div>
+
+                                <div id="pag">
+                                    <div class="valortotal">
+                                        
+                                        ${nota.desconto > 0 ? `<div class="desconto" >Desconto: <div >${nota.desconto.toFixed(2)}</div></div>` : ''}
+
+                                        <div class="total"><strong>Total OS:</strong> <div class="">${nota.total}</div></div>
+                                        
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <footer>
+                                <div class="obg">Obrigado pela preferencia!!</div>
+                                <span class="row2"></span>
+                                <div class="termo"><strong>Termo e garantia</strong>, Acesse: <a target="_blank" href="https://silastermoeservicos.wasmer.app/">silastermoeservicos.wasmer.app</a></div>
+                            </footer>
+
+                        </div>
+
+                    
+                    
+                    
+                    `)
+
+                  printWindow.document.write('</body></html>');
+                  printWindow.document.close();
+                  printWindow.focus();/* 
+                  printWindow.print(); */
+
+                }
+
+        function excluirNota(botao) {
+          if (confirm("Tem certeza que deseja excluir esta nota?")) {
+            const card = botao.closest('.col');
+            const notaId = card.getAttribute('data-id');
+            card.remove();
+            const notas = JSON.parse(localStorage.getItem('notas')) || [];
+            const atualizadas = notas.filter(n => n.id !== notaId);
+            localStorage.setItem('notas', JSON.stringify(atualizadas));
+          }
+        }
+
+        function exportarNota(botao) {
+          const card = botao.closest('.col');
+          const notaId = card.getAttribute('data-id');
+          const notas = JSON.parse(localStorage.getItem('notas')) || [];
+          const nota = notas.find(n => n.id === notaId);
+          
+          if (!nota) {
+            alert("Nota não encontrada.");
+            return;
+          }
+          
+          const blob = new Blob([JSON.stringify(nota, null, 2)], { type: 'application/json' });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = `${notaId}.json`;
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          URL.revokeObjectURL(url);
+          
+        }
+
+        function importarNotaJson(event) {
+          const file = event.target.files[0];
+          if (!file) return;
+
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            try {
+              const nota = JSON.parse(e.target.result);
+
+              if (!nota.id || !nota.cliente || !nota.total) {
+                alert("Arquivo inválido ou incompleto.");
+                return;
+              }
+
+              const notas = JSON.parse(localStorage.getItem('notas')) || [];
+              const notaExistente = notas.find(n => n.id === nota.id);
+
+              if (notaExistente) {
+                if (!confirm(`Já existe uma nota com o ID ${nota.id}. Deseja sobrescrever?`)) return;
+                const atualizadas = notas.map(n => n.id === nota.id ? nota : n);
+                localStorage.setItem('notas', JSON.stringify(atualizadas));
+              } else {
+                notas.push(nota);
+                localStorage.setItem('notas', JSON.stringify(notas));
+              }
+
+              renderizarNota(nota);
+              alert("Nota importada com sucesso!");
+            } catch (err) {
+              alert("Erro ao importar nota: " + err.message);
+            }
+          };
+
+          reader.readAsText(file);
+        }
+
+        // Carregar notas ao inicializar a página
+        document.addEventListener("DOMContentLoaded", function() {
+          const notas = JSON.parse(localStorage.getItem('notas')) || [];
+          notas.forEach(renderizarNota);
+        });
+
+        function exportarBanco() {
+          const notas = JSON.parse(localStorage.getItem('notas')) || [];
+          const blob = new Blob([JSON.stringify(notas, null, 2)], { type: 'application/json' });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = `banco_nps_autoservico.json`;
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          URL.revokeObjectURL(url);
+        }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then((registration) => {
+            console.log('Service Worker registrado com sucesso:', registration);
+          })
+          .catch((error) => {
+            console.log('Erro ao registrar Service Worker:', error);
+          });
+      }
+  </script>
+ 
+</body>
+</html>
