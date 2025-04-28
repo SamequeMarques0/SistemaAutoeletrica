@@ -1,0 +1,14 @@
+[
+  {
+    "id": "510137",
+    "cliente": "Paulo de Nobrega",
+    "veiculo": "Mini Cooper 2.0 BiTurbo 2020/2020",
+    "placa": "kmcdkc",
+    "garantia": "82 Dias",
+    "observacao": "Não houve observações",
+    "servicos": "<li><div class=\"descr\">Agua</div><div class=\"vlr\">R$ 100.00</div></li><li><div class=\"descr\">Sol</div><div class=\"vlr\">R$ 100.00</div></li><li><div class=\"descr\">Luz</div><div class=\"vlr\">R$ 200.00</div></li><li><div class=\"descr\">Musica</div><div class=\"vlr\">R$ 200.00</div></li>",
+    "total": "580.00",
+    "data": "26/04/2025",
+    "desconto": 20
+  }
+]
