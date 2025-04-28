@@ -24,6 +24,11 @@
     font-size: 24px;
   }
   
+  .img{
+    width: 120px;
+    margin-left: 20px;
+  }
+
   .bgcolorRed{background: var(--cor2);}
   .bgcolorGray{background: var(--cor4);}
   .bgcolorDark{background: var(--cor1);}
