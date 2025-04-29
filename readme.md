@@ -26,12 +26,12 @@ apenas HTML,CSS e JS. com intuito de aprendizagem.
 
 <br/>
 
-<a href="https://github.com/samequemarques0" title="Perfil do Iuri">
+<a href="https://github.com/samequemarques0" title="Perfil do Sameque">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=samequemarques0&theme=dracula&show_icons=true" />
 </a>
 
 ## Onde me encontrar
 
-[![Gmail Badge](https://img.shields.io/badge/-seuemail@email.com-006bed?style=flat-square&logo=Gmail&logoColor=white&link=mailto:SEU-EMAIL)](mailto:sameque12@gmail.com)
-[![GitHub](https://img.shields.io/github/followers/iuricode?label=follow&style=social)]([LINK-DO-SEU-GITHUB](https://github.com/SamequeMarques0))
-[![Instagram](https://img.shields.io/github/followers/iuricode?label=follow&style=social)]([LINK-DO-SEU-GITHUB](https://www.instagram.com/_samequemarques))
+<a href="https://instagram.com/samequemarques0" title="Perfil do Sameque">
+  🖥 SAMEQUE MARQUES
+</a>
