@@ -360,27 +360,9 @@
                     
                     `)
                   
-                  printWindow.document.write(`
-                        <button onclick="test()" id="btnMobile" style="cursor="pointer" Display: block; padding: 5px 12px; border: 1px solid #c2c2c2; background: #000; color: #fff">IMPRIMIR</button>
-                  `
-                  )
-                  
-
-                  printWindow.document.write(` <script> 
-                    function test(){
-                      const btn = document.querySelectorAll("#btnMobile");
-
-                      btn.style.display = "none";
-                      document.print();
-                    } 
-                    
-                    <script>
-                  `)
+            
                   printWindow.document.write('</body></html>');
                   printWindow.document.close();
-                  printWindow.focus();/* 
-                  printWindow.print(); */
-                  printWindow.close();
                   printWindow.print();
 
                 }
