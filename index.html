@@ -263,6 +263,7 @@
                   printWindow.document.write('<html><head><title>Imprimir Nota</title>');
                   printWindow.document.write('<link rel="stylesheet" href="https://raw.githubusercontent.com/SamequeMarques0/SilasApplicationSource/refs/heads/main/main-os.css">');
                   printWindow.document.write('<link rel="stylesheet" href="main-os.css">');
+                  
                   printWindow.document.write('</head><body class="" style="position:relative;">');
 
 
@@ -363,17 +364,9 @@
                         <span id="btnImprimirMobile" style="Display: block; padding: 5px 12px; border: 1px solid #c2c2c2; background: #000; color: #fff">IMPRIMIR</span>
                   `
                   )
+                  
 
-                  printWindow.document.write(`
-                  <script>
-                    const btn = document.querySelectorAll('#btnImprimirMobile');
-
-                    btn.addEventListerEnner('click', ()=>{
-                      btn.style.display= "none";
-                      document.print();
-                    })
-                  </script>`)
-
+                  printWindow.document.write('<script src="test.js"><script>')
                   printWindow.document.write('</body></html>');
                   printWindow.document.close();
                   printWindow.focus();
