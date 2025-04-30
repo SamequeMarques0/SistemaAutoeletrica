@@ -263,7 +263,7 @@
                   printWindow.document.write('<html><head><title>Imprimir Nota</title>');
                   printWindow.document.write('<link rel="stylesheet" href="https://raw.githubusercontent.com/SamequeMarques0/SilasApplicationSource/refs/heads/main/main-os.css">');
                   printWindow.document.write('<link rel="stylesheet" href="main-os.css">');
-                  printWindow.document.write('</head><body class="">');
+                  printWindow.document.write('</head><body class="" style="position:relative;">');
 
 
                   /* ----______------_______------_______------_______------____ */
@@ -361,7 +361,7 @@
                     
                   
                   printWindow.document.write(`
-                       <button style="position: absolute; botton: 25px; right: 30px; background: #c2c2c2; text-align: center; color: #000;" onclick="print()">
+                       <button style="position: absolute; botton: 40px; right: 30px; background: #c2c2c2; text-align: center; color: #000;" onclick="print()">
                         IMPRIMIR
                         </button>
                   `)
@@ -378,7 +378,7 @@
                   printWindow.document.write('</body></html>');
                   printWindow.document.close();
                   printWindow.focus();
-                  printWindow.print(); /* --- */
+                  printWindow.print(); 
 
                 }
 
