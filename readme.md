@@ -2,8 +2,8 @@
 
 ## 💻 Sobre Aplicativo
 
-  Aplicação desenvolvida para elaboração de notas( Não fiscal), apenas utilizando
-apenas HTML,CSS e JS. com intuito de aprendizagem.
+  Aplicação desenvolvida para elaboração de notas( Não fiscal) para Autoeletrica,
+especificamente Silas Autoeletrica & Serviços.
 
 ## Detalhes
 
