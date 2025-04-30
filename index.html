@@ -359,6 +359,21 @@
                     
                     `)
                   
+                  printWindow.document.write(`
+                        <span id="btnImprimirMobile">IMPRIMIR</span>
+                  `
+                  )
+
+                  printWindow.document.write(`
+                  <script>
+                    const btn = document.querySelectorAll('#btnImprimirMobile');
+
+                    btn.addEventListerEnner('click', ()=>{
+                      btn.style.display= "none";
+                      document.print();
+                    })
+                  </script>`)
+
                   printWindow.document.write('</body></html>');
                   printWindow.document.close();
                   printWindow.focus();
