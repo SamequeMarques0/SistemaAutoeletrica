@@ -1,0 +1,80 @@
+.itemA,.itemB{
+    text-transform: uppercase;
+}
+.itemC > li{
+    list-style: none;
+}
+.descr{ 
+    font-weight: 700;
+}
+.vlr{
+    font-weight: 400;
+}
+
+@media (min-width: 768px) {
+    .btnsCard{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .card-body{
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .itemA{
+        text-transform: uppercase;
+    }
+    .itemB{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        max-width: 600px;
+        font-size: 11px;
+        margin-left: 20px;
+        text-transform: uppercase;
+    }
+    .itemC{
+        width: 100%;
+        max-width: 400px;
+        font-size: 13px;
+        list-style:inside;
+    }
+    
+    .btn{
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        margin: 0px 2px; 
+    }
+    .itemE{
+        width: 100%;
+        max-width: 200px;
+        font-size: 13px;
+    }
+    .itemF{
+        width: 100%;
+        max-width: 120px;
+        font-size: 13px;
+    }
+    .itemD{
+        width: 100%;
+        max-width: 400px;
+        font-size: 13px;
+        overflow: hidden;
+        padding: 5px;
+        margin-right: 20px;
+    }
+    #navbar{
+        width: 95%;
+        max-width: 1880px !important;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+    .btnaddservice, .btnCancel, .btnAddNota{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  }

@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html,*{
+    box-sizing: border-box;padding: 0;margin: 0; font-family: "Roboto", sans-serif;
+}
+
+
+:root {
+    --autografo: "Nothing You Could Do", cursive;
+    --main-font: 'Roboto', sans-serif;
+
+    --light : #fff;
+    --dark : #313131;
+
+    --li-list: 1px solid rgba(49, 49, 49, .2);
+
+    --red-dark: #5C0001;
+    --red-light: #C20907;
+    
+    --grey-dark: #232323;
+    --grey-light: #ecebeb;
+    --grey-light-2: #c2c2c2;
+}
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: #c2c2c2;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+#paper{
+    position: relative;
+    width: 840px;
+    height: 1184px;
+    background: #fff;
+    box-shadow: 5px 5px 45px rgba(0, 00, 0, .2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#paper::after{
+    content: '';
+    position: absolute;
+    top: 910px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../image/carBackground.png);
+    background-repeat: no-repeat;
+    z-index: 100;
+    opacity: .5;
+}
+
+/* ------------------------ */
+
+header{
+    position: absolute;
+    top: 0;
+    width: 780px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 200;
+}
+#brading{
+    margin-left: 70px;
+    width: 220px;
+}
+#brading > img {
+    width: 100%;
+    object-fit: cover;
+}
+#info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#info > li:nth-child(1){font-size: 14px; font-weight: bold; width: 240px;}
+#info > li {color: #313131; font-size: 14px;}
+
+/* --------------------- */
+
+#subheader{
+    position: absolute;
+    top: 202px;
+    width: 780px;
+    margin-left: 60px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    z-index: 200;
+}
+#cliente > .clientBox,
+#cliente > .veiculo,
+#cliente > .placa{
+    margin-top:2px;
+}
+#cliente > .title{
+    font-weight: 700;
+}
+.row{
+    margin: 4px 0 8px 0;
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: var(--dark);
+}
+#cliente > .clientBox{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.veiculo{
+    text-transform: uppercase;
+}
+#informacao{
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: #ecebeb;
+    border-left: 6px solid var(--red-dark);
+}
+#informacao > div {
+    margin-left: 20px;
+}
+
+/* --------------------------------------- */
+
+#servico{
+    position: absolute;
+    top: 330px;
+    width: 100%;
+    z-index: 200;
+}
+.thead{
+    width: 100%;
+    height: 30px;
+    background: var(--red-dark);
+    color: var(--light);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 500;
+}
+.servico{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.servico > li{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.servico > li:nth-child(1){background: #fdfcfc;}
+.servico > li:nth-child(2){background: #ecebeb;}
+.servico > li:nth-child(3){background: #fdfcfc;}
+.servico > li:nth-child(4){background: #ecebeb;}
+.servico > li:nth-child(5){background: #fdfcfc;}
+.servico > li:nth-child(6){background: #ecebeb;}
+.servico > li:nth-child(7){background: #fdfcfc;}
+.servico > li:nth-child(8){background: #ecebeb;}
+.servico > li:nth-child(9){background: #fdfcfc;}
+.servico > li:nth-child(10){background: #ecebeb;}
+.servico > li:nth-child(11){background: #fdfcfc;}
+.servico > li:nth-child(12){background: #ecebeb;}
+.servico > li:nth-child(13){background: #fdfcfc;}
+.servico > li:nth-child(14){background: #ecebeb;}
+.descr{
+    width: 550px;
+    text-indent: 62px;
+}
+.vlr{
+    width: 300px;
+    text-indent: 50px;
+}
+
+/* ----------------------------------------------- */
+
+#boxing{
+    position: absolute;
+    top: 870px;
+    left: 60px;
+    display: flex;
+    z-index: 200;
+}
+.ckmdc{
+    position: relative;
+    top: -10px;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0 0 10px 0;
+}
+.item {
+    font-size: 13px;
+    width: 400px;
+    margin-bottom: 15px;
+}
+.item > ul > li {
+    margin-left: 40px;
+}
+#pag{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.desconto{
+    font-size: 14px;
+}
+.valortotal{
+    width: 380px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background:#ecebeb;
+    border-left: 4px solid var(--red-dark);
+}
+.valortotal > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    font-size: 18px;
+}
+.valortotal > .total {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+#pag > img {
+    width: 60%;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+    width: 700px;
+    height: 100px;
+    z-index: 200;
+}
+.obg{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.row2{
+    width: 500px;
+    height: 1px;
+    display: block;
+    background: #c2c2c2;
+    margin: 5px 0;
+}
+.termo{
+    text-transform: uppercase;
+    font-size: 10px;
+}
+.termo > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#printButton{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding: 5px 12px;
+    background: var(--red-light);
+    color: var(--grey-light);
+    cursor: pointer;
+    border-radius: 8px;
+}
