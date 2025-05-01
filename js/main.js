@@ -232,8 +232,6 @@ let contador = 124;
 
                 
                     <span id="printButton">PRINT</span>
-
-
                     <script src="./js/pagePrint.js"></script>
                 
                 `)
