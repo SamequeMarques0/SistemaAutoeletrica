@@ -1,4 +1,4 @@
-<img src="readmeimage.png" alt="Banner com Design do Aplicativo">
+<img src="image/readmeimage.png" alt="Banner com Design do Aplicativo">
 
 ## 💻 Sobre Aplicativo
 
