@@ -339,7 +339,7 @@ let contador = 124;
       URL.revokeObjectURL(url);
     }
 
-    document.querySelector('.exportBD').addEventListener('click', function(event) {
+    document.getElementById('exportBD').addEventListener('click', function(event) {
         event.preventDefault();
         exportarBanco();
         return false;
