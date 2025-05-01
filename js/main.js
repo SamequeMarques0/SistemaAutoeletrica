@@ -138,8 +138,7 @@ let contador = 124;
               // Usando o JSON da nota para criar a visualização
               const printWindow = window.open('', '', 'height=600,width=800');
               printWindow.document.write(`<html><head><title>OS | ${nota.id} </title>`);
-              printWindow.document.write('<link rel="stylesheet" href="../css/main-os.css">');
-              printWindow.document.write('<link rel="stylesheet" href="https://raw.githubusercontent.com/SamequeMarques0/SistemaAutoeletrica/refs/heads/main/main-os.css">');
+              printWindow.document.write('<link rel="stylesheet" href="./css/main-os.css">');
               printWindow.document.write('</head><body class="">');
 
 
@@ -149,7 +148,7 @@ let contador = 124;
                   <div id="paper">
                         <header>
                             <div id="brading">
-                                <img src="../image/silas-brading.png" alt="">
+                                <img src="./image/silas-brading.png" alt="">
                             </div>
                             <ul id="info">
                                 <li  style="list-style: none;">Rua Nossa Senhora do Carmo, 407, 57082-210, Maceió/AL</li>
@@ -170,7 +169,7 @@ let contador = 124;
                             <div id="informacao">
                                 <div class="id"><strong>ID:</strong>${nota.id}</div>
                                 <div class="data"><strong>DATA:</strong>${nota.data}</div>
-                                <div class="garantia"><strong>GARANTIA(FIM):</strong>${nota.garantia}</div>  <!-- @@@@ criar obj pra calcular a data atual e por +90 dias -->
+                                <div class="garantia"><strong>GARANTIA(FIM):</strong>${nota.garantia}</div>
                             </div>
                         </div>
 
@@ -235,14 +234,13 @@ let contador = 124;
                     <span id="printButton">PRINT</span>
 
 
-                    <script src="../js/pagePrint.js"></script>
+                    <script src="./js/pagePrint.js"></script>
                 
                 `)
 
               printWindow.document.write('</body></html>');
               printWindow.document.close();
-              printWindow.focus();/* 
-              printWindow.print(); */
+              printWindow.focus();
 
             }
 
