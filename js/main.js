@@ -323,6 +323,8 @@ let contador = 124;
       notas.forEach(renderizarNota);
     });
 
+
+     /* ------------------------------------------------------------------------ */
     function exportarBanco() {
       const notas = JSON.parse(localStorage.getItem('notas')) || [];
       const blob = new Blob([JSON.stringify(notas, null, 2)], { type: 'application/json' });
@@ -345,9 +347,7 @@ let contador = 124;
         return false;
       });
 
-
-/* function refreshPage(){window.location.reload();} */
-/* document.getElementById('refreshPage').addEventListener('click', refreshPage()); */
+ /* ------------------------------------------------------------------------ */
 
 document.querySelectorAll(".btnlight").forEach(function(btn) {
     btn.addEventListener('click', bgAtualiza());
