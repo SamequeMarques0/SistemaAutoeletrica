@@ -11,7 +11,10 @@ let contador = 124;
             container.appendChild(div);
           }
 
-    document.getElementById('adicionaCampo').addEventListener('click', adicionarCampoServico());
+    document.getElementById('adicionaCampo').addEventListener('click', ()=>{
+      console.log('Clicado');
+      adicionarCampoServico();
+    });
 
     function gerarIdAleatorio() {
 	      return Math.floor(100000 + Math.random() * 900000).toString();
@@ -83,7 +86,9 @@ let contador = 124;
       modal.hide();
     }
 
-    document.getElementById('addingNota').addEventListener('click', adicionarNota());
+    document.getElementById('addingNota').addEventListener('click', ()=>{
+      adicionarNota();
+    });
 
     function salvarNota(nota) {
       const notas = JSON.parse(localStorage.getItem('notas')) || [];
@@ -325,7 +330,8 @@ let contador = 124;
 
 
      /* ------------------------------------------------------------------------ */
-    function exportarBanco() {
+
+   /*  function exportarBanco() {
       const notas = JSON.parse(localStorage.getItem('notas')) || [];
       const blob = new Blob([JSON.stringify(notas, null, 2)], { type: 'application/json' });
       const url = URL.createObjectURL(blob);
@@ -341,11 +347,11 @@ let contador = 124;
       URL.revokeObjectURL(url);
     }
 
-    document.getElementById('exportBD').addEventListener('click', function(event) {
+    document.getElementById('exportBD').addEventListener('click', (event)=> {
         event.preventDefault();
         exportarBanco();
         return false;
-      });
+      }); */
 
  /* ------------------------------------------------------------------------ */
 
