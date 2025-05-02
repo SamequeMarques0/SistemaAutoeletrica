@@ -144,7 +144,7 @@ let contador = 124;
               const printWindow = window.open('', '', 'height=600,width=800');
               printWindow.document.write(`<html><head><title>OS | ${nota.id} </title>`);
               printWindow.document.write('<link rel="stylesheet" href="./css/main-os.css">');
-              printWindow.document.write('</head><body class="">');
+              printWindow.document.write('</head><body>');
 
 
               /* ----______------_______------_______------_______------____ */
