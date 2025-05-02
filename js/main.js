@@ -143,7 +143,7 @@ let contador = 124;
               // Usando o JSON da nota para criar a visualização
               const printWindow = window.open('', '', 'height=600,width=800');
               printWindow.document.write(`<html><head><title>OS | ${nota.id} </title>`);
-              printWindow.document.write('<link rel="stylesheet" href="./css/main-os.css">');
+              printWindow.document.write('<link rel="stylesheet" href="/css/main-os.css">');
               printWindow.document.write('</head><body class="">');
 
 
@@ -153,7 +153,7 @@ let contador = 124;
                   <div id="paper">
                         <header>
                             <div id="brading">
-                                <img src="./image/silas-brading.png" alt="">
+                                <img src="image/silas-brading.png" alt="">
                             </div>
                             <ul id="info">
                                 <li  style="list-style: none;">Rua Nossa Senhora do Carmo, 407, 57082-210, Maceió/AL</li>
