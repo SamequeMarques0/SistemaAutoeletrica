@@ -346,7 +346,7 @@ let contador = 124;
       });
 
 
-function refreshPage(){window.location.reload();}
+/* function refreshPage(){window.location.reload();} */
 
 document.getElementById('refreshPage').addEventListener('click', refreshPage());
 
