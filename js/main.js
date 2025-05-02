@@ -347,7 +347,6 @@ let contador = 124;
 
 
 /* function refreshPage(){window.location.reload();} */
-
 /* document.getElementById('refreshPage').addEventListener('click', refreshPage()); */
 
 document.querySelectorAll(".btnlight").forEach(function(btn) {
